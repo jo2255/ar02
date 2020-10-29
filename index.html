@@ -6,36 +6,31 @@
  
     <a-scene embedded arjs='trackingMethod: best; patternRatio: 0.9; debugUIEnabled: false; maxDetectionRate:30;' antialias="true">
     <a-marker emitevents="true" id="logo-marker" type="pattern" url="markers/pattern-a.patt" cursor="rayOrigin: mouse" markerhandler>
-    </a-marker>
-    
-    
-    <a-assets>
-    <audio id="roar_sound" src="assets/dino.mp3" response-type="arraybuffer"></audio>
+        
+   <a-assets>
     <a-asset-item id="dino" src="assets/AnyConv.com__pan1 v0.gltf"></a-asset-item>
     </a-assets>
+        
+    </a-marker>
     
-    
-    <a-marker emitevents="true" id="logo-marker" type="pattern" url="marker/pattern-a.patt" cursor="rayOrigin: mouse" markerhandler>
     <a-entity id="animated-dino" gltf-model="#dino"
         position="0 0 0"
         rotation="0 0 0"
         scale="0.001 0.001 0.001"
         crossOrigin="anonymous"
         dinoInteractionListener>
-    </a-entity>
-    <a-entity sound="src: #roar_sound; volume: 1; loop: true">
-    </a-entity>
-</a-marker>     
-    
-    
-    <a-entity id="point_light_1" light="type: point; intensity: 5.1;" position="0 0 0"></a-entity>
-    
-    
     <a-entity camera="active: true; near: 1; far: 1000;"
     position="0 0 0"
     cursor="rayOrigin: mouse"
     data-aframe-default-camera>
 </a-entity>
+   
+    
+    
+    <a-entity id="point_light_1" light="type: point; intensity: 5.1;" position="0 0 0"></a-entity>
+    
+    
+   
         
         </a-scene>
 </body>
