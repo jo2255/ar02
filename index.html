@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-    h901
+    h9011
+    <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
-  <body style='margin:0px; overflow:hidden;'>
+    </head>
+  <body>
+      
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-
+    
+       <a-marker preset='hiro'> 
+        <a-entity gltf-model="a.gltf" scale="6 6 6" crossOrigin="anonymous"><a-entity>
  
-        
- <a-marker emitevents="true"  type="pattern" url="https://github.com/jo2255/ar02/blob/main/markers/pattern-n.patt" cursor="rayOrigin: mouse" markerhandler>
-    
-    
-    
       <a-entity text="value: HELLO" material="color: red; src: #texture"></a-entity>
    <a-box position='0 1 0' material='opacity: 0.5; color:#F70087;'></a-box>
 
