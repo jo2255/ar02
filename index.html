@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <script src="js/aframe-v0.8.2.min.js"></script>
+    <script src="js/aframe-v1.0.4.min.js"></script>
     <script src="js/aframe-ar.js"></script>
 <body style="margin : 0px; overflow: hidden;">
  
     <a-scene embedded arjs='trackingMethod: best; patternRatio: 0.9; debugUIEnabled: false; maxDetectionRate:30;' antialias="true">
-    <a-marker emitevents="true" id="logo-marker" type="pattern" url="pattern-a.patt" cursor="rayOrigin: mouse" markerhandler>
+    <a-marker emitevents="true" id="logo-marker" type="pattern" url="marker/pattern-a.patt" cursor="rayOrigin: mouse" markerhandler>
     </a-marker>
     </a-scene>
     
     <a-assets>
-    <audio id="roar_sound" src="assets/dino.mp3" response-type="arraybuffer"></audio>
-    <a-asset-item id="dino" src="AnyConv.com__pan1 v0.gltf"></a-asset-item>
+    <audio id="roar_sound" src="asset/dino.mp3" response-type="arraybuffer"></audio>
+    <a-asset-item id="dino" src="asset/AnyConv.com__pan1 v0.gltf"></a-asset-item>
     </a-assets>
     
     
