@@ -9,15 +9,27 @@
       
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
     
+         <a-assets>
+    <a-asset-item id="tree" src="https://raw.githubusercontent.com/jo2255/ar02/main/a.gltf">
+  </a-assets>
+             
        <a-marker preset='hiro'> 
       
      
    <a-box position='0 1 0' material='opacity: 0.5; color:#F70087;'></a-box>
-             <a-entity gltf-model="assets/a.gltf" scale="6 6 6" crossOrigin="anonymous"></a-entity>
+             
   <a-entity text="value: HELLO" material="color: red; src: #texture"></a-entity>
 
+  <a-gltf-model src="#tree"></a-gltf-model>
+
+
+           
+           
 </a-marker>
 
+        
+        
+        
 
 <a-entity camera></a-entity>
        
