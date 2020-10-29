@@ -11,8 +11,21 @@
     
     <a-assets>
     <audio id="roar_sound" src="assets/dino.mp3" response-type="arraybuffer"></audio>
-    <a-asset-item id="dino" src="ar02/AnyConv.com__pan1 v0.gltf"></a-asset-item>
+    <a-asset-item id="dino" src="AnyConv.com__pan1 v0.gltf"></a-asset-item>
     </a-assets>
+    
+    
+    <a-marker emitevents="true" id="logo-marker" type="pattern" url="pattern-a.patt" cursor="rayOrigin: mouse" markerhandler>
+    <a-entity id="animated-dino" gltf-model="#dino"
+        position="0 0 0"
+        rotation="0 0 0"
+        scale="0.001 0.001 0.001"
+        crossOrigin="anonymous"
+        dinoInteractionListener>
+    </a-entity>
+    <a-entity sound="src: #roar_sound; volume: 1; loop: true">
+    </a-entity>
+</a-marker>       
         
         
 </body>
